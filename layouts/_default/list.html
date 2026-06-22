@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h2 style="color:#f0f6fc;margin-bottom:1.5rem;font-size:1.3rem">全部文章</h2>
+{{ range .Pages.ByDate.Reverse }}
+<article>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+    <div class="summary">{{ .Summary }}</div>
+    {{ if .Params.tags }}
+    <div class="tags">{{ range .Params.tags }}<span>{{ . }}</span>{{ end }}</div>
+    {{ end }}
+</article>
+{{ end }}
+{{ end }}
