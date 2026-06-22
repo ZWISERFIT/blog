@@ -1,0 +1,8 @@
+baseURL: "https://blog.zwiserfit.com/"
+languageCode: "zh-cn"
+title: "ZWISERFIT Blog"
+hasCJKLanguage: true
+
+params:
+  author: "ZWISERFIT · Baron"
+  description: "AI x Web5 x Physical · ZWISERFIT 官方博客"
